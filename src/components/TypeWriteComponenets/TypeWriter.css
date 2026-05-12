@@ -1,0 +1,19 @@
+.TypWriterStyle {
+    color: #AE8CD2;
+    font-size: 5rem;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-weight: bold;
+    background: transparent !important;
+}
+
+/* IMPORTANT: styles internes de la librairie */
+.Typewriter,
+.Typewriter__wrapper,
+.Typewriter__cursor {
+    background: transparent !important;
+}
+
+/* éviter bloc bizarre */
+.Typewriter__wrapper {
+    display: inline;
+}

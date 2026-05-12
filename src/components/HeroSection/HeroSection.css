@@ -1,0 +1,60 @@
+ .herosection_bg {
+    position: relative;
+}
+
+.hero-title {
+    color: white;
+    font-size: 5rem;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.rond1 {
+    position: fixed;
+    inset: 0;
+    margin: auto;
+    width: 40%;
+    height: 40%;
+    filter: blur(80px);
+    z-index: 0;
+    pointer-events: none;
+}
+.rond1-container {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 100vw;
+    height: 50vh;
+    overflow: hidden;
+    transform: scale(0.8);
+    background: transparent;
+}
+
+.blob-rond1 {
+    position: absolute;
+    width: 100vw;
+    height: 50vh;
+    inset: 0;
+    margin: auto;
+    background: conic-gradient(from 0deg, #11071C, #043642, #3F255E, #2A1741, #4b2178 ,#055665,#393d58,#411dc1,#035867);
+    animation: spinBlob 15s linear infinite;
+}
+
+@keyframes spinBlob {
+    0% {
+        transform: rotate(0deg) scale(2);
+    }
+
+    100% {
+        transform: rotate(360deg) scale(2);
+    }
+  }
+.hero-title{
+    color: white;
+    font-size: 5rem;
+    text-align: center;
+    background: none;
+ }
+
+
