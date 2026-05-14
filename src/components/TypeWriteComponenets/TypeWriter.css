@@ -17,3 +17,80 @@
 .Typewriter__wrapper {
     display: inline;
 }
+
+
+/* =========================
+   BASE (desktop)
+========================= */
+.TypWriterStyle {
+    color: #AE8CD2;
+    font-size: 5rem;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-weight: bold;
+    background: transparent !important;
+}
+
+/* IMPORTANT: styles internes de la librairie */
+.Typewriter,
+.Typewriter__wrapper,
+.Typewriter__cursor {
+    background: transparent !important;
+}
+
+/* éviter bloc bizarre */
+.Typewriter__wrapper {
+    display: inline;
+}
+
+/* =========================
+   BASE (desktop)
+========================= */
+.TypWriterStyle {
+    color: #AE8CD2;
+    font-size: 5rem;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-weight: bold;
+    background: transparent !important;
+}
+
+/* =========================
+   LIBRARY FIX (Typewriter)
+========================= */
+.Typewriter,
+.Typewriter__wrapper,
+.Typewriter__cursor {
+    background: transparent !important;
+}
+
+/* éviter bloc bizarre */
+.Typewriter__wrapper {
+    display: inline;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+/* Tablette (768px - 992px) */
+@media (min-width: 768px) and (max-width: 992px) {
+
+    .TypWriterStyle {
+        font-size: 3.8rem;
+    }
+}
+
+/* Mobile large (576px - 768px) */
+@media (min-width: 576px) and (max-width: 768px) {
+
+    .TypWriterStyle {
+        font-size: 2.8rem;
+    }
+}
+
+/* Mobile petit (max 576px) */
+@media (max-width: 576px) {
+
+    .TypWriterStyle {
+        font-size: 2rem;
+    }
+}

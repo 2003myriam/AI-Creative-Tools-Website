@@ -39,6 +39,7 @@
     width: 100px;
     object-fit: contain; /* L’image :se réduit,
 mais garde sa forme originale. */
+background: none;
 }
 
 .NavBar li{
@@ -48,7 +49,7 @@ mais garde sa forme originale. */
     cursor: pointer;
     position: relative;
     transition: 0.3s ease;
-    
+    background: none;
 }
 
 /* Hover effect */
