@@ -1,25 +1,77 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navar from '../../components/NavBar/Navar'
 import './ImageGenerator.css'
 import { IoIosSend } from "react-icons/io";
 
 function ImageGnerator() {
-  return (
-     <>
-     <div className='imageGnerator'>
-      <div className='imageGneraor_historique'>
-        <button className='Navbar-btn'>Add Chat</button>
-      </div>
-      <div className='imageGneraor_chat'>
-  <div className='imageGneraor-ipt_btn'>
-    <input type="text" />
-    <button><IoIosSend className='icone_imageGenerator'/></button>
-  </div>
-</div>
+const [chat, setChat] = useState(""); 
+const [image, setImage] = useState(null);
+const  generateImage=async()=>{
+        try{
+         const result = await fetch("http://localhost:5001/IA/generateImage", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify({
+  prompt: chat,
+})
+}
+         )      
+          const Data= await result.blob()
+          const imageUrl = URL.createObjectURL(Data);
+          setImage(imageUrl);
+         
+        }
+        catch(err){
+          console.error("erreur",err)
+        }
+      }
+const handelChange=(e)=>{
+const prompt=e.target.value
+setChat(prompt)
+}
+ return (
+  <div className="imageGnerator">
 
-     </div>
-     </>
-  )
+    {/* LEFT PANEL */}
+    <div className="imageGneraor_historique">
+      <button className="Navbar-btn">Add Chat</button>
+    </div>
+
+    {/* RIGHT PANEL */}
+    <div className="imageGneraor_chat">
+
+      {/* ZONE MESSAGES (HAUT) */}
+      <div className="messages">
+        <p className="chat-text">{chat}</p>
+
+        {image && (
+          <img
+            src={image}
+            alt="generated"
+            className="generated-image"
+          />
+        )}
+      </div>
+
+      {/* INPUT (BAS) */}
+      <div className="imageGneraor-ipt_btn">
+        <input
+          type="text"
+          value={chat}
+          onChange={handelChange}
+          placeholder="Describe your image..."
+        />
+
+        <button onClick={generateImage}>
+          <IoIosSend className="icone_imageGenerator" />
+        </button>
+      </div>
+
+    </div>
+  </div>
+);
 }
 
 export default ImageGnerator

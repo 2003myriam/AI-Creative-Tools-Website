@@ -2,7 +2,7 @@
   display: flex;
   gap: 20px;
   padding: 30px;
-  height: 50vh;
+  height: 100%;
 
 }
 
@@ -26,7 +26,7 @@
 .imageGneraor_chat {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end; /* pousse tout en bas */
+ justify-content: space-between;
   width: 70%;
   height: auto;
   padding: 20px;
@@ -45,6 +45,28 @@
   width: 100%;
   padding: 12px;
   background: none;
+}
+.messages {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-right: 10px;
+}
+.chat-text {
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 10px;
+  border-radius: 10px;
+  width: fit-content;
+}
+/* GENERATED IMAGE */
+.generated-image {
+  max-width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
 }
 
 /* INPUT */
