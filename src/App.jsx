@@ -6,6 +6,7 @@ import HeroSection from './components/HeroSection/HeroSection'
 import { Route, Routes } from 'react-router-dom'
 import HomePage from './pages/HomePage'
 import ImageGnerator from './pages/ImageGenertor/ImageGnerator'
+import Footer from './components/Footer/Footer'
 
 function App() {
   
@@ -17,6 +18,7 @@ function App() {
       <Route path='/' element={<HomePage/>}/>
       <Route path='/image_generator' element={<ImageGnerator/>}/>
      </Routes>
+     <Footer/>
     
     
 

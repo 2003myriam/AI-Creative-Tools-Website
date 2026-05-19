@@ -54,6 +54,7 @@
   gap: 15px;
   padding-right: 10px;
   background: none;
+
 }
 .letsgenerate{
   color: white;
@@ -83,11 +84,11 @@
 }
 /* GENERATED IMAGE */
 .generated-image {
-  width: 300px;
-  height: 200px;
-  border-radius: 12px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.4);
-  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+ background: none;
+  display: block;
 }
 /* INPUT */
 .imageGneraor-ipt_btn input {
@@ -117,4 +118,118 @@
   height: 30px;
   background: none;
   filter: drop-shadow(0 0 10px rgba(253, 253, 253, 0.8));
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+/* TABLETTE */
+@media (min-width: 768px) and (max-width: 992px) {
+
+  .imageGnerator {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .imageGneraor_historique,
+  .imageGneraor_chat {
+    width: 100%;
+  }
+
+  .chat-text {
+    max-width: 70%;
+  }
+
+  .letsgenerate {
+    font-size: 1.8rem;
+  }
+}
+
+/* MOBILE LARGE */
+@media (min-width: 576px) and (max-width: 768px) {
+
+  .imageGnerator {
+    flex-direction: column;
+    padding: 15px;
+    gap: 15px;
+  }
+
+  .imageGneraor_historique,
+  .imageGneraor_chat {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .imageGneraor-ipt_btn {
+    padding: 5px;
+  }
+
+  .imageGneraor-ipt_btn input {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .chat-text {
+    max-width: 85%;
+    font-size: 14px;
+  }
+
+  .generated-image {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+  }
+
+  .letsgenerate {
+    font-size: 1.5rem;
+  }
+}
+
+/* MOBILE SMALL */
+@media (max-width: 576px) {
+
+  .imageGnerator {
+    flex-direction: column;
+    padding: 10px;
+    gap: 12px;
+  }
+
+  .imageGneraor_historique,
+  .imageGneraor_chat {
+    width: 100%;
+    padding: 12px;
+    border-radius: 15px;
+  }
+
+  .imageGneraor-ipt_btn {
+    gap: 8px;
+    padding: 0;
+  }
+
+  .imageGneraor-ipt_btn input {
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .chat-text {
+    max-width: 100%;
+    font-size: 13px;
+    margin-left: 0;
+  }
+
+  .generated-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .icone_imageGenerator {
+    width: 24px;
+    height: 24px;
+  }
+
+  .letsgenerate {
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
 }

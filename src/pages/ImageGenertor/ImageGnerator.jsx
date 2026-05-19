@@ -50,7 +50,7 @@ setChat(prompt)
         <p className="chat-text">{chat}</p>
           <img
             src={image}
-            alt="generated"
+            alt=""
             className="generated-image"
           />
       </div>
