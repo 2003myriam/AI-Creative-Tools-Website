@@ -17,7 +17,7 @@ function OurTools() {
       </div>
       <div  className="parent">
         <div  
-        className="div1" > <h2>Prompt Generator</h2> <p>Craft perfect prompts for any model in seconds.</p> <div className="OurTools-btnicone"> <button className="OurTools-btn"> Open Tools <IoIosArrowDropright /> </button> </div>
+        className="div1" > <h2>Image Generator</h2> <p>Transform your imagination into unique images.</p> <div className="OurTools-btnicone"> <button className="OurTools-btn"> Open Tools <IoIosArrowDropright /> </button> </div>
          </div>
         <div className="div2">
           <h2>Caption Writer</h2>
