@@ -12,7 +12,8 @@ export default function HeroSection() {
       </h1>
       <p className="hero-paragraphe">One immersive workspace for prompts, captions, palettes, ideas and chat — wrapped in a futuristic interface that gets out of your way.</p>
       <div className="hero-btn">
-      <button className='Navbar-btn btn' >Explore Tools</button>
+        <a href="#tools"> <button className='Navbar-btn btn' >Explore Tools</button></a>
+     
       <button className='hero-btn2 btn '>Try IA Chat</button>
       </div>
      

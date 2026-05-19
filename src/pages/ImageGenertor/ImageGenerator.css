@@ -53,6 +53,19 @@
   flex-direction: column;
   gap: 15px;
   padding-right: 10px;
+  background: none;
+}
+.letsgenerate{
+  color: white;
+  background: none;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 0px;
+}
+.letsgenerate_icone{
+  color: yellow;
+  background: none;
+   filter: drop-shadow(0 0 10px rgba(232, 226, 102, 0.8));
 }
 .chat-text {
   color: white;
@@ -60,15 +73,22 @@
   background: rgba(255, 255, 255, 0.08);
   padding: 10px;
   border-radius: 10px;
-  width: fit-content;
+  max-width:  50%;
+  height: auto;
+  margin-left: 10px;
+
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
 }
 /* GENERATED IMAGE */
 .generated-image {
-  max-width: 300px;
+  width: 300px;
+  height: 200px;
   border-radius: 12px;
   box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  background: none;
 }
-
 /* INPUT */
 .imageGneraor-ipt_btn input {
   flex: 1;
@@ -79,6 +99,7 @@
   background: rgba(255, 255, 255, 0.08);
   color: white;
   font-family: 'Times New Roman', Times, serif;
+ 
 }
 
 /* BUTTON */

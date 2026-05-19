@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import Navar from '../../components/NavBar/Navar'
 import './ImageGenerator.css'
 import { IoIosSend } from "react-icons/io";
+import { FaLightbulb } from "react-icons/fa";
+
 
 function ImageGnerator() {
 const [chat, setChat] = useState(""); 
@@ -44,15 +46,13 @@ setChat(prompt)
 
       {/* ZONE MESSAGES (HAUT) */}
       <div className="messages">
+       <h1 className='letsgenerate'>Let's Turn your ideas images <FaLightbulb className='letsgenerate_icone' /></h1>
         <p className="chat-text">{chat}</p>
-
-        {image && (
           <img
             src={image}
             alt="generated"
             className="generated-image"
           />
-        )}
       </div>
 
       {/* INPUT (BAS) */}

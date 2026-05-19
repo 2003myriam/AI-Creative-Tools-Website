@@ -1,12 +1,12 @@
 import React from "react";
 import "./OurTools.css";
 import { IoIosArrowDropright } from "react-icons/io";
-import {motion} from "framer-motion"
+import { Link } from "react-router-dom";
 function OurTools() {
    
   return (
     <>
-    <div className="OurTools_bg">
+    <div className="OurTools_bg" id="tools">
       <div className="ourtools-part1">
         <h3>The toolkit</h3>
         <h2>Six tools. One workspace.</h2>
@@ -16,9 +16,13 @@ function OurTools() {
         </p>
       </div>
       <div  className="parent">
-        <div  
-        className="div1" > <h2>Image Generator</h2> <p>Transform your imagination into unique images.</p> <div className="OurTools-btnicone"> <button className="OurTools-btn"> Open Tools <IoIosArrowDropright /> </button> </div>
+     <div  className="div1" > 
+      <Link to={"/image_generator"} className="OurTollsLink" >
+      <h2>Image Generator</h2> <p>Transform your imagination into unique images.</p> <div className="OurTools-btnicone"> <button className="OurTools-btn"> Open Tools <IoIosArrowDropright /> </button> </div>
+      </Link>
+      
          </div>
+         
         <div className="div2">
           <h2>Caption Writer</h2>
           <p>Scroll-stopping captions, every single time.</p>

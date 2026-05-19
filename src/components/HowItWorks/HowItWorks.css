@@ -1,0 +1,106 @@
+/* =========================
+   GRID LAYOUT
+========================= */
+
+.parent2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 20px 80px;
+}
+.parent2 > div {
+  border-radius: 18px;
+  padding: 30px;
+  height: 100px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+
+  /* violet style */
+  background: #AE8CD2;
+
+  /* clean single border accent */
+  border-left: 10px solid #3c2356;
+}
+.parent2 h2,
+.parent2 h3,
+.parent2 p {
+  margin: 5px;
+}
+.parent2,h2{
+  font-family: 'Times New Roman', Times, serif;
+  background: none;
+  
+}
+.parent2,h3{
+  font-family: 'Times New Roman', Times, serif;
+  background: none;
+}
+.parent2,p{
+  font-family: 'Times New Roman', Times, serif;
+  background: none;
+  
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+/* TABLETTE */
+@media (min-width: 768px) and (max-width: 992px) {
+
+  .parent2 {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px 40px;
+  }
+
+  .parent2 > div {
+    height: auto;
+  }
+}
+
+/* MOBILE LARGE */
+@media (min-width: 576px) and (max-width: 768px) {
+
+  .parent2 {
+    grid-template-columns: 1fr;
+    padding: 20px 30px;
+  }
+
+  .parent2 > div {
+    height: auto;
+    padding: 25px;
+  }
+
+  .parent2 h2 {
+    font-size: 1.8rem;
+  }
+}
+
+/* MOBILE SMALL */
+@media (max-width: 576px) {
+
+  .parent2 {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .parent2 > div {
+    height: auto;
+    padding: 22px;
+  }
+
+  .parent2 h2 {
+    font-size: 1.5rem;
+  }
+
+  .parent2 h3 {
+    font-size: 1rem;
+  }
+
+  .parent2 p {
+    font-size: 0.9rem;
+  }
+}

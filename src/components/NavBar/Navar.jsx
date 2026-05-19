@@ -8,7 +8,7 @@ function Navar() {
      <ul className='NavBar'>
       <img src= {logo} alt="AI" className='navbar-logo' />
       <li>Home</li>
-      <li>AI Tools</li>
+      <a className='OurTollsLink' href="#tools"><li>AI Tools</li></a>
       <li>Prompt Gen </li>
       <li>Chat</li>
       <li>Pricing</li>
